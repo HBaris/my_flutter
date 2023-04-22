@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:my_flutter/service/auth.dart';
 import 'package:my_flutter/pages/home.dart';
 import 'package:my_flutter/pages/register.dart';
@@ -108,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                             MaterialPageRoute(
                                 builder: (context) => HomePage()));
                       }).catchError((err) {
-                        AlertDialog("hata")
+                        AlertDialog(semanticLabel: "hata");
                       });
                     },
                     child: Container(

@@ -1,5 +1,7 @@
 // import 'package:my_flutter/pages/add_status.dart';
 // import 'package:my_flutter/pages/status_list.dart';
+// ignore_for_file: prefer_const_constructors, unused_label
+
 import 'package:my_flutter/service/auth.dart';
 import 'package:flutter/material.dart';
 
@@ -59,8 +61,9 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ));
-    body: (
-      Text("My body my choice"); // StatusListPage()); 
-    ));
+    // ignore: dead_code
+    body:
+    (Text("My body my choice") // StatusListPage());
+        );
   }
 }
